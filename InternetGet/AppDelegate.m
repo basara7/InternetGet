@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import "FirstViewController.h"
+#import "MyNavViewController.h"
 
 @interface AppDelegate ()
 
@@ -24,7 +26,12 @@
     self.window.backgroundColor = [UIColor whiteColor];
     
     //must have a view controller
-    self.window.rootViewController = [[ViewController alloc] initWithNibName:nil bundle:nil];
+    //self.window.rootViewController = [[ViewController alloc] initWithNibName:nil bundle:nil];
+    FirstViewController *fVC = [[FirstViewController alloc] init];
+    //NavigationContriller
+    MyNavViewController *nav = [[MyNavViewController alloc] initWithRootViewController:fVC];
+    
+    self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
     
     

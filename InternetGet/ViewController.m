@@ -21,8 +21,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    UIImageView *PicView = [[UIImageView alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    [self.view addSubview:PicView];
+    //UIImageView *PicView = [[UIImageView alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    //[self.view addSubview:PicView];
     
     /*
     AFHTTPSessionManager *session = [AFHTTPSessionManager manager];
@@ -39,7 +39,7 @@
     }];
      */
     //the second method to get the pic
-    [PicView sd_setImageWithURL:[NSURL URLWithString:imageURL]];
+    //[PicView sd_setImageWithURL:[NSURL URLWithString:imageURL]];
 }
 
 - (void)didReceiveMemoryWarning {

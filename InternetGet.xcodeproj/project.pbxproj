@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E1288BC1CD33AD7008E73F4 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E1288BB1CD33AD7008E73F4 /* FirstViewController.m */; };
+		2E1288BF1CD34DF9008E73F4 /* MyNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E1288BE1CD34DF9008E73F4 /* MyNavViewController.m */; };
+		2E1288C21CD35C8F008E73F4 /* NaviView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E1288C11CD35C8F008E73F4 /* NaviView.m */; };
+		2E1288C41CD35CB4008E73F4 /* NaviView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E1288C31CD35CB4008E73F4 /* NaviView.xib */; };
 		2E2644C41CD1028B00403134 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2644C31CD1028B00403134 /* main.m */; };
 		2E2644C71CD1028B00403134 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2644C61CD1028B00403134 /* AppDelegate.m */; };
 		2E2644CA1CD1028B00403134 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2644C91CD1028B00403134 /* ViewController.m */; };
@@ -35,6 +39,13 @@
 
 /* Begin PBXFileReference section */
 		299D3EF0B480F4C9A31B08AC /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E1288BA1CD33AD7008E73F4 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		2E1288BB1CD33AD7008E73F4 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		2E1288BD1CD34DF9008E73F4 /* MyNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyNavViewController.h; sourceTree = "<group>"; };
+		2E1288BE1CD34DF9008E73F4 /* MyNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyNavViewController.m; sourceTree = "<group>"; };
+		2E1288C01CD35C8F008E73F4 /* NaviView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NaviView.h; sourceTree = "<group>"; };
+		2E1288C11CD35C8F008E73F4 /* NaviView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NaviView.m; sourceTree = "<group>"; };
+		2E1288C31CD35CB4008E73F4 /* NaviView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NaviView.xib; sourceTree = "<group>"; };
 		2E2644BF1CD1028B00403134 /* InternetGet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InternetGet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E2644C31CD1028B00403134 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2E2644C51CD1028B00403134 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -88,9 +99,17 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		2E1288C51CD36613008E73F4 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = resource;
+			sourceTree = "<group>";
+		};
 		2E2644B61CD1028B00403134 = {
 			isa = PBXGroup;
 			children = (
+				2E1288C51CD36613008E73F4 /* resource */,
 				2E2644C11CD1028B00403134 /* InternetGet */,
 				2E2644DB1CD1028B00403134 /* InternetGetTests */,
 				2E2644E61CD1028B00403134 /* InternetGetUITests */,
@@ -117,6 +136,13 @@
 				2E2644C61CD1028B00403134 /* AppDelegate.m */,
 				2E2644C81CD1028B00403134 /* ViewController.h */,
 				2E2644C91CD1028B00403134 /* ViewController.m */,
+				2E1288BA1CD33AD7008E73F4 /* FirstViewController.h */,
+				2E1288BB1CD33AD7008E73F4 /* FirstViewController.m */,
+				2E1288BD1CD34DF9008E73F4 /* MyNavViewController.h */,
+				2E1288BE1CD34DF9008E73F4 /* MyNavViewController.m */,
+				2E1288C01CD35C8F008E73F4 /* NaviView.h */,
+				2E1288C11CD35C8F008E73F4 /* NaviView.m */,
+				2E1288C31CD35CB4008E73F4 /* NaviView.xib */,
 				2E2644CE1CD1028B00403134 /* Assets.xcassets */,
 				2E2644D31CD1028B00403134 /* Info.plist */,
 				2E2644C21CD1028B00403134 /* Supporting Files */,
@@ -264,6 +290,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E1288C41CD35CB4008E73F4 /* NaviView.xib in Resources */,
 				2E2644CF1CD1028B00403134 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,9 +364,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E1288BF1CD34DF9008E73F4 /* MyNavViewController.m in Sources */,
 				2E2644CA1CD1028B00403134 /* ViewController.m in Sources */,
+				2E1288C21CD35C8F008E73F4 /* NaviView.m in Sources */,
 				2E2644C71CD1028B00403134 /* AppDelegate.m in Sources */,
 				2E2644C41CD1028B00403134 /* main.m in Sources */,
+				2E1288BC1CD33AD7008E73F4 /* FirstViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
