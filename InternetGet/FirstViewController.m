@@ -10,12 +10,18 @@
 #import "AFNetworking.h"
 #import "UIImageView+WebCache.h"
 
+#import "NaviView.h"
+
 #define imageURL @"http://d.hiphotos.baidu.com/zhidao/pic/item/3ac79f3df8dcd100710f3b36708b4710b9122f12.jpg" 
 
 //@"http://www.cosplaymore.com/uploadfile/2015/0108/20150108103111712.jpg"
 
-@interface FirstViewController ()
+@interface FirstViewController (){
 
+    UIBarButtonItem *firstItem;
+    UIBarButtonItem *secondItem;
+
+}
 @end
 
 @implementation FirstViewController
@@ -63,8 +69,35 @@ static NSString * const reuseIdentifier = @"Cell";
     UIImage *logoImage = [UIImage imageNamed:@"logo.png"];
     logoImage = [logoImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     UIBarButtonItem *logo = [[UIBarButtonItem alloc] initWithImage:logoImage style:UIBarButtonItemStyleDone target: nil action:nil];
-    self.navigationItem.leftBarButtonItem = logo;
+    //self.navigationItem.leftBarButtonItem = logo;
+    
+    //2. UIBarButtomItem
+    
+    NaviView *first = [NaviView makeNaviView];
+    [first addtarget:self action:@selector(firstClick)];
+    NaviView *second = [NaviView makeNaviView];
+    [second addtarget:self action:@selector(secondClick)];
+    
+    firstItem = [[UIBarButtonItem alloc] initWithCustomView:first];
+    secondItem = [[UIBarButtonItem alloc] initWithCustomView:second];
+    
+    self.navigationItem.leftBarButtonItems = @[logo, firstItem, secondItem];
 }
+
+#pragma mark - 点击事件
+
+- (void)firstClick{
+    NSLog(@"1");
+
+}
+- (void)secondClick{
+     NSLog(@"2");
+}
+
+
+
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

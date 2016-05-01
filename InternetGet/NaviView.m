@@ -8,6 +8,13 @@
 
 #import "NaviView.h"
 
+@interface NaviView ()
+@property (weak, nonatomic) IBOutlet UIButton *buttom;
+
+
+
+@end
+
 @implementation NaviView
 
 /*
@@ -17,5 +24,13 @@
     // Drawing code
 }
 */
+
++(instancetype)makeNaviView{
+    return [[[NSBundle mainBundle] loadNibNamed:@"NaviView" owner:self options:nil] firstObject];
+}
+
+- (void)addtarget:(id)target action:(SEL)action{
+    [self.buttom addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
+}
 
 @end

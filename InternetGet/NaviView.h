@@ -12,4 +12,6 @@
 
 + (instancetype) makeNaviView;
 
+- (void) addtarget:(id)target action:(SEL)action;
+
 @end
