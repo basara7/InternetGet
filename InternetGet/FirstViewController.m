@@ -14,10 +14,12 @@
 
 #define imageURL @"http://d.hiphotos.baidu.com/zhidao/pic/item/3ac79f3df8dcd100710f3b36708b4710b9122f12.jpg" 
 
-//@"http://www.cosplaymore.com/uploadfile/2015/0108/20150108103111712.jpg"
+#define imageURL1 @"http://www.cosplaymore.com/uploadfile/2015/0108/20150108103111712.jpg"
 
 @interface FirstViewController (){
 
+    UIImageView *PicView;
+    
     UIBarButtonItem *firstItem;
     UIBarButtonItem *secondItem;
 
@@ -41,7 +43,7 @@ static NSString * const reuseIdentifier = @"Cell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    [NSThread sleepForTimeInterval:3.0];
     
     // Uncomment the following line to preserve selection between presentations
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -51,8 +53,11 @@ static NSString * const reuseIdentifier = @"Cell";
     
     // Do any additional setup after loading the view.
     
-    UIImageView *PicView = [[UIImageView alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    PicView = [[UIImageView alloc] initWithFrame:[UIScreen mainScreen].bounds];
     [self.view addSubview:PicView];
+    
+    //Image aspect fit 
+    PicView.contentMode = UIViewContentModeScaleAspectFit;
     
     //get the pic from Initernet
     [PicView sd_setImageWithURL:[NSURL URLWithString:imageURL]];
@@ -87,11 +92,12 @@ static NSString * const reuseIdentifier = @"Cell";
 #pragma mark - 点击事件
 
 - (void)firstClick{
-    NSLog(@"1");
+    //get the pic from Initernet
+    [PicView sd_setImageWithURL:[NSURL URLWithString:imageURL1]];
 
 }
 - (void)secondClick{
-     NSLog(@"2");
+    [PicView sd_setImageWithURL:[NSURL URLWithString:imageURL]];
 }
 
 
@@ -117,7 +123,7 @@ static NSString * const reuseIdentifier = @"Cell";
 #pragma mark <UICollectionViewDataSource>
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-#warning Incomplete implementation, return the number of sections
+//#warning Incomplete implementation, return the number of sections
     return 0;
 }
 
