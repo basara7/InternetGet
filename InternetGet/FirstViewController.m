@@ -43,7 +43,7 @@ static NSString * const reuseIdentifier = @"Cell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [NSThread sleepForTimeInterval:3.0];
+    //[NSThread sleepForTimeInterval:3.0];
     
     // Uncomment the following line to preserve selection between presentations
     // self.clearsSelectionOnViewWillAppear = NO;

@@ -18,6 +18,7 @@
 		2E2644DD1CD1028B00403134 /* InternetGetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2644DC1CD1028B00403134 /* InternetGetTests.m */; };
 		2E2644E81CD1028B00403134 /* InternetGetUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2644E71CD1028B00403134 /* InternetGetUITests.m */; };
 		2E78E8891CD66BF1004976C7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E78E8881CD66BF1004976C7 /* Default-568h@2x.png */; };
+		2EA4D9D71CDD04A30010191F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EA4D9D61CDD04A30010191F /* LaunchScreen.xib */; };
 		860E1895E4A30C3909A67275 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 299D3EF0B480F4C9A31B08AC /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +63,7 @@
 		2E2644E71CD1028B00403134 /* InternetGetUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InternetGetUITests.m; sourceTree = "<group>"; };
 		2E2644E91CD1028B00403134 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E78E8881CD66BF1004976C7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		2EA4D9D61CDD04A30010191F /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		BCCA0A5217857C0FFBFDE0EF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		EE76E7351AD3D07CA0D72B4F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -147,6 +149,7 @@
 				2E1288C11CD35C8F008E73F4 /* NaviView.m */,
 				2E1288C31CD35CB4008E73F4 /* NaviView.xib */,
 				2E2644CE1CD1028B00403134 /* Assets.xcassets */,
+				2EA4D9D61CDD04A30010191F /* LaunchScreen.xib */,
 				2E2644D31CD1028B00403134 /* Info.plist */,
 				2E2644C21CD1028B00403134 /* Supporting Files */,
 			);
@@ -293,6 +296,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EA4D9D71CDD04A30010191F /* LaunchScreen.xib in Resources */,
 				2E1288C41CD35CB4008E73F4 /* NaviView.xib in Resources */,
 				2E2644CF1CD1028B00403134 /* Assets.xcassets in Resources */,
 				2E78E8891CD66BF1004976C7 /* Default-568h@2x.png in Resources */,
@@ -494,7 +498,6 @@
 			baseConfigurationReference = EE76E7351AD3D07CA0D72B4F /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = InternetGet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = BIGCAT.InternetGet;
@@ -508,7 +511,6 @@
 			baseConfigurationReference = BCCA0A5217857C0FFBFDE0EF /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = InternetGet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = BIGCAT.InternetGet;

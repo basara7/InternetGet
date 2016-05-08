@@ -10,12 +10,17 @@
 #import "ViewController.h"
 #import "FirstViewController.h"
 #import "MyNavViewController.h"
+#import "UIImageView+WebCache.h"
 
 @interface AppDelegate ()
+
+@property (strong, nonatomic) UIView *launchView;
 
 @end
 
 @implementation AppDelegate
+
+@synthesize launchView;
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
@@ -35,7 +40,28 @@
     [self.window makeKeyAndVisible];
     
     
+    //launch screen
+    launchView = [[[NSBundle mainBundle] loadNibNamed:@"LaunchScreen" owner:nil options:nil]firstObject];
+    launchView.frame = CGRectMake(0, 0, self.window.screen.bounds.size.width, self.window.screen.bounds.size.height);
+    [self.window addSubview:launchView];
+    UIImageView *myLaunchImage = [[UIImageView alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    NSString *LaunchUrl = @"http://img3.duitang.com/uploads/item/201303/13/20130313143913_nkxuc.thumb.700_0_000.jpeg";
+    [myLaunchImage sd_setImageWithURL:[NSURL URLWithString:LaunchUrl] placeholderImage:[UIImage imageNamed:@"LaunchPic"]];
+    
+    [launchView addSubview:myLaunchImage];
+    
+    [self.window bringSubviewToFront:launchView];
+    
+    [NSTimer scheduledTimerWithTimeInterval:3 target:self selector:@selector(removeLun) userInfo:nil repeats:NO];
+    
+    
+    
     return YES;
+}
+
+-(void)removeLun
+{
+    [launchView removeFromSuperview];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
