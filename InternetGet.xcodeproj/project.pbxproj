@@ -18,6 +18,7 @@
 		2E2644DD1CD1028B00403134 /* InternetGetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2644DC1CD1028B00403134 /* InternetGetTests.m */; };
 		2E2644E81CD1028B00403134 /* InternetGetUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2644E71CD1028B00403134 /* InternetGetUITests.m */; };
 		2E78E8891CD66BF1004976C7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E78E8881CD66BF1004976C7 /* Default-568h@2x.png */; };
+		2E87C4171CE38E5A00AC2009 /* PopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E87C4161CE38E5A00AC2009 /* PopViewController.m */; };
 		2EA4D9D71CDD04A30010191F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EA4D9D61CDD04A30010191F /* LaunchScreen.xib */; };
 		860E1895E4A30C3909A67275 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 299D3EF0B480F4C9A31B08AC /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -63,6 +64,8 @@
 		2E2644E71CD1028B00403134 /* InternetGetUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InternetGetUITests.m; sourceTree = "<group>"; };
 		2E2644E91CD1028B00403134 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E78E8881CD66BF1004976C7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		2E87C4151CE38E5A00AC2009 /* PopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopViewController.h; sourceTree = "<group>"; };
+		2E87C4161CE38E5A00AC2009 /* PopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopViewController.m; sourceTree = "<group>"; };
 		2EA4D9D61CDD04A30010191F /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		BCCA0A5217857C0FFBFDE0EF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		EE76E7351AD3D07CA0D72B4F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -143,6 +146,8 @@
 				2E2644C91CD1028B00403134 /* ViewController.m */,
 				2E1288BD1CD34DF9008E73F4 /* MyNavViewController.h */,
 				2E1288BE1CD34DF9008E73F4 /* MyNavViewController.m */,
+				2E87C4151CE38E5A00AC2009 /* PopViewController.h */,
+				2E87C4161CE38E5A00AC2009 /* PopViewController.m */,
 				2E1288BA1CD33AD7008E73F4 /* FirstViewController.h */,
 				2E1288BB1CD33AD7008E73F4 /* FirstViewController.m */,
 				2E1288C01CD35C8F008E73F4 /* NaviView.h */,
@@ -376,6 +381,7 @@
 				2E2644CA1CD1028B00403134 /* ViewController.m in Sources */,
 				2E1288C21CD35C8F008E73F4 /* NaviView.m in Sources */,
 				2E2644C71CD1028B00403134 /* AppDelegate.m in Sources */,
+				2E87C4171CE38E5A00AC2009 /* PopViewController.m in Sources */,
 				2E2644C41CD1028B00403134 /* main.m in Sources */,
 				2E1288BC1CD33AD7008E73F4 /* FirstViewController.m in Sources */,
 			);

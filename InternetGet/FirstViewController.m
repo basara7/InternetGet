@@ -9,6 +9,7 @@
 #import "FirstViewController.h"
 #import "AFNetworking.h"
 #import "UIImageView+WebCache.h"
+#import "PopViewController.h"
 
 #import "NaviView.h"
 
@@ -94,15 +95,33 @@ static NSString * const reuseIdentifier = @"Cell";
 - (void)firstClick{
     //get the pic from Initernet
     [PicView sd_setImageWithURL:[NSURL URLWithString:imageURL1]];
+    
 
 }
 - (void)secondClick{
-    [PicView sd_setImageWithURL:[NSURL URLWithString:imageURL]];
+    //[PicView sd_setImageWithURL:[NSURL URLWithString:imageURL]];
+    [self createPopver];
 }
 
 
+#pragma mark - 下拉菜单
 
-
+- (void)createPopver{
+    PopViewController *pvc = [[PopViewController alloc] init];
+    /*
+    pvc.modalPresentationStyle = UIModalPresentationPopover;
+    UIPopoverPresentationController *detailedPop = pvc.popoverPresentationController;
+    //detailedPop.delegate = self;
+    detailedPop.barButtonItem = secondItem;
+    detailedPop.sourceView = self.view;
+    detailedPop.permittedArrowDirections = UIPopoverArrowDirectionAny;
+    [self presentViewController:pvc animated:YES completion:nil];
+     */
+    
+    //UIPopoverContorller has not been used anymore.
+    UIPopoverController *pop = [[UIPopoverController alloc] initWithContentViewController:pvc];
+    [pop presentPopoverFromBarButtonItem:firstItem permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
+}
 
 
 - (void)didReceiveMemoryWarning {
